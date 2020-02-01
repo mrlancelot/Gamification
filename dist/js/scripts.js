@@ -20,3 +20,13 @@
         $("body").toggleClass("sb-sidenav-toggled");
     });
 })(jQuery);
+
+
+function incr() {
+    var v1=document.getElementById('p1').style.width;
+    console.log(v1);
+    var valueNeeded = v1.slice(v1.length - 3);
+    console.log(valueNeeded); 
+    document.getElementById("p1").style = "width :90%";
+    document.getElementById("p1").innerHTML = valueNeeded;
+    }
