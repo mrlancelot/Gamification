@@ -12,7 +12,7 @@
         "start": "npm run build && node scripts/start.js",
         "start:debug": "npm run build && node scripts/start-debug.js"
     },
-    "description": "A free admin dashboard template based on Bootstrap 4, created by Start Bootstrap.",
+    "description": "A free admin dashboard template based on Bootstrap 4, created by <img src="assets/img/DBSlogo.png" alt="" height="58px" width="140px">.",
     "keywords": [
         "css",
         "sass",
@@ -30,7 +30,7 @@
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "<img src="assets/img/DBSlogo.png" alt="" height="58px" width="140px">",
     "contributors": [
         "David Miller (http://davidmiller.io/)"
     ],

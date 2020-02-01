@@ -37,7 +37,7 @@ module.exports = function renderSCSS() {
 };
 
 const entryPoint = `/*!
-* Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
+* <img src="assets/img/DBSlogo.png" alt="" height="58px" width="140px"> - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
 * Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
 * Licensed under ${packageJSON.license} (https://github.com/BlackrockDigital/${packageJSON.name}/blob/master/LICENSE)
 */

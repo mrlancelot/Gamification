@@ -1,6 +1,6 @@
 /*!
-    * Start Bootstrap - SB Admin v6.0.0 (https://startbootstrap.com/templates/sb-admin)
-    * Copyright 2013-2020 Start Bootstrap
+    * <img src="assets/img/DBSlogo.png" alt="" height="58px" width="140px"> - SB Admin v6.0.0 (https://startbootstrap.com/templates/sb-admin)
+    * Copyright 2013-2020 <img src="assets/img/DBSlogo.png" alt="" height="58px" width="140px">
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
     */
     (function($) {
@@ -21,12 +21,38 @@
     });
 })(jQuery);
 
+document.getElementById("btnClick").click();
 
 function incr() {
     var v1=document.getElementById('p1').style.width;
     console.log(v1);
-    var valueNeeded = v1.slice(v1.length - 3);
-    console.log(valueNeeded); 
-    document.getElementById("p1").style = "width :90%";
-    document.getElementById("p1").innerHTML = valueNeeded;
+    var valueNeeded = v1.substring(0, 2);
+    // v1.slice(v1.length - 2);
+    console.log(valueNeeded);
+    insertValue =  parseInt(valueNeeded);
+    valueNeeded = insertValue+10;
+     
+
+    if(valueNeeded == 100){
+        console.log("Reward For You!");
+        this.myFunction();
+        document.getElementById("modelClick").click();
     }
+    console.log(valueNeeded);
+    document.getElementById("p1").style = "width :"+valueNeeded+"%";
+    document.getElementById("p1").innerHTML = valueNeeded + "%";
+    }
+
+    function myFunction() {
+        
+        var x = document.createElement("IMG");
+        // var x = document.getElementById("RewardImg");
+        // x.setAttribute("src", "./assets/source.gif");
+        // x.setAttribute("width", "80%");
+        // x.setAttribute("height", "50%");
+        // // x.setAttribute("position","absolute");
+        // // x.setAttribute("top","-80%");
+        // // x.setAttribute("z-index", "100");
+        // x.setAttribute("alt", "The Pulpit Rock");
+        document.body.appendChild(x);
+      }
